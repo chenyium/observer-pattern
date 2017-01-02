@@ -7,9 +7,6 @@ class CSubject;
 
 class CObserver 
 {
-protected:
-    CObserver() { }
-
 public:
     virtual ~CObserver() { }
 

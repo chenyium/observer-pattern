@@ -28,7 +28,7 @@ PATH_SRC :=source
 PATH_OBJ :=obj/
 PATH_BIN :=bin/
 
-CXX      :=g++
+CXX      :=g++ -std=c++11
 CPPFLAGS :=-g -Wall -O3
 CPPFLAGS +=$(addprefix -I,$(PATH_INC))
 CPPFLAGS +=-MMD

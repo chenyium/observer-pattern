@@ -1,13 +1,8 @@
 #include "ConcreteObserver.h"
 
-CConcreteObserver::CConcreteObserver()
-{ }
-
-CConcreteObserver::~CConcreteObserver()
-{ }
-
 void CConcreteObserver::Update(CSubject * subject)
 {
-    std::cout << "concrete observer update" << std::endl;
+    std::cout << subject->GetAction() << " : ";
+    std::cout << "observer update" << std::endl;
 }
 

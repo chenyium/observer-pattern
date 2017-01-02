@@ -6,11 +6,28 @@
 class CConcreteObserver : public CObserver
 {
 public:
-    CConcreteObserver();
-    virtual ~CConcreteObserver();
+    virtual ~CConcreteObserver() { }
 
 public:
     virtual void Update(CSubject *);
+};
+
+
+//! other implement
+class CObserverBindA
+{
+public:
+    void Update(){
+        std::cout << "observer bind A update" << std::endl;
+    }
+};
+
+class CObserverBindB
+{
+public:
+    void Update(){
+        std::cout << "concrete bind B update" << std::endl;
+    }
 };
 
 #endif
